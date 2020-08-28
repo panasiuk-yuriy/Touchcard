@@ -195,7 +195,8 @@ button {
     .bottom__btn--mobile {
       height: 50px;
       width: 225px;
-      margin-right: 10px; } }
+      margin-right: 10px;
+      font-size: 20px; } }
 
 body,
 h4,
