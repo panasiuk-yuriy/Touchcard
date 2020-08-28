@@ -1,0 +1,91 @@
+body,
+h4,
+h2,
+h3,
+p,
+input,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  list-style: none; }
+
+button {
+  outline: none;
+  border: none; }
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 78px;
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07); }
+  .bottom__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .bottom__item {
+    margin-right: 45px;
+    text-transform: uppercase; }
+    .bottom__item:last-child {
+      margin-right: 0; }
+    .bottom__item:first-child::before {
+      content: url("../images/vectors/for-bussiness.svg");
+      position: relative;
+      top: 2px;
+      right: 5px; }
+  .bottom__link {
+    color: #2b2f4a;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 0; }
+    .bottom__link:hover {
+      text-decoration: underline; }
+  .bottom__link--select::after {
+    content: url("../images/vectors/arrow-down-black.svg");
+    position: relative;
+    left: 5px;
+    top: -2px; }
+  .bottom__btn, .bottom__btn--mobile {
+    width: 175px;
+    height: 40px;
+    background: #2a66f9;
+    border-radius: 8px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .bottom__btn::after, .bottom__btn--mobile::after {
+      content: url("../images/vectors/to-account.svg");
+      position: relative;
+      left: 5px;
+      top: 3px; }
+    .bottom__btn:hover, .bottom__btn--mobile:hover {
+      background-color: #274eaf; }
+
+@media screen and (max-width: 1200px) {
+  .bottom {
+    padding: 15px 16px; }
+    .bottom__nav, .bottom__btn {
+      display: none; }
+    .bottom__btn--mobile {
+      height: 50px;
+      width: 225px;
+      margin-right: 10px; } }
+
+/*# sourceMappingURL=bottom.css.map */

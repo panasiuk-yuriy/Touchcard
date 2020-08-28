@@ -1,0 +1,35 @@
+body,
+h4,
+h2,
+h3,
+p,
+input,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  list-style: none; }
+
+button {
+  outline: none;
+  border: none; }
+
+.dropdown-menu {
+  margin-top: 5px;
+  padding: 10px 0;
+  position: absolute;
+  display: none;
+  background-color: #2a66f9; }
+  .dropdown-menu li {
+    margin-top: 5px;
+    padding: 5px 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .dropdown-menu li:hover {
+      background-color: #2b2f4a; }
+
+/*# sourceMappingURL=dropdown.css.map */

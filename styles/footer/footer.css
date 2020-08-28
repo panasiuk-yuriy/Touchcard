@@ -1,0 +1,252 @@
+body,
+h4,
+h2,
+h3,
+p,
+input,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  list-style: none; }
+
+button {
+  outline: none;
+  border: none; }
+
+.footer {
+  max-width: 1280px;
+  margin: 0 auto; }
+  .footer__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 33px 78px;
+    background-color: #2a66f9; }
+  .footer__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footer__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 0 55px; }
+  .footer__phones {
+    margin-right: 52px; }
+  .footer__phones, .footer__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer__app:first-child {
+    margin-right: 16px; }
+  .footer__media {
+    margin-top: 28px; }
+  .footer__right--title {
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff; }
+  .footer__payment {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer__copiright {
+    padding: 5px 78px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #393939; }
+  .footer__copiright_left, .footer__copiright_right {
+    font-size: 12px; }
+  .footer__copiright_right {
+    text-decoration: underline; }
+  .footer__app_img:hover, .footer__media_img:hover {
+    -webkit-box-shadow: 10px 10px 41px -6px rgba(0, 0, 0, 0.43);
+            box-shadow: 10px 10px 41px -6px rgba(0, 0, 0, 0.43); }
+  .footer__media_link:first-child {
+    margin-right: 20px; }
+  .footer__apps_mobile {
+    display: none; }
+
+.info__title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #c7d7ff; }
+
+.info__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .info__top a:hover {
+    color: #bbbbbb; }
+
+.info__contacts {
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.info__apps {
+  justify-self: end; }
+
+.form {
+  max-width: 365px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .form__input {
+    border: none;
+    background-color: #2a66f9;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    outline: none;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 15px; }
+    .form__input :focus {
+      border-bottom: 1px solid white; }
+    .form__input::-webkit-input-placeholder {
+      color: #c7d7ff;
+      font-size: 15px;
+      font-weight: 300; }
+    .form__input::-moz-placeholder {
+      color: #c7d7ff;
+      font-size: 15px;
+      font-weight: 300; }
+    .form__input:-ms-input-placeholder {
+      color: #c7d7ff;
+      font-size: 15px;
+      font-weight: 300; }
+    .form__input::-ms-input-placeholder {
+      color: #c7d7ff;
+      font-size: 15px;
+      font-weight: 300; }
+    .form__input::placeholder {
+      color: #c7d7ff;
+      font-size: 15px;
+      font-weight: 300; }
+  .form__submit {
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #2a66f9;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer; }
+    .form__submit :hover {
+      background-color: #fff;
+      color: #2a66f9; }
+
+@media screen and (max-width: 860px) {
+  .form__input {
+    background-color: #22253d; } }
+
+@media screen and (max-width: 860px) {
+  .footer__top {
+    padding: 20px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #2b2f4a; }
+  .footer__contacts {
+    padding: 0 17px 33px; }
+  .footer__phones {
+    margin-bottom: 24px; }
+  .footer__apps {
+    display: none; }
+  .footer__logo {
+    display: none; }
+  .footer__contactform {
+    background-color: #22253d;
+    padding: 18px 16px 28px; }
+  .footer__copiright {
+    padding: 0 0 10px;
+    background-color: #2b2f4a;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer__copiright_left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .footer__copiright_right {
+    text-decoration: none;
+    margin-bottom: 20px; }
+  .footer__apps_mobile {
+    display: block;
+    padding: 26px 17px 20px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.15); }
+  .footer__app_img {
+    width: 160px; }
+  .footer__payment {
+    padding: 0 17px; } }
+
+@media screen and (max-width: 420px) {
+  .footer__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media screen and (max-width: 860px) {
+  .info__title {
+    font-size: 20px; }
+  .info__contacts {
+    font-size: 18px; } }
+
+@media screen and (max-width: 860px) {
+  .form__submit {
+    background: #fff;
+    text-transform: uppercase;
+    color: #2b2f4a;
+    font-weight: bold;
+    font-size: 17px; } }
+
+/*# sourceMappingURL=footer.css.map */

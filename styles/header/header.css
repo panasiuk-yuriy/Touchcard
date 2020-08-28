@@ -1,0 +1,33 @@
+body,
+h4,
+h2,
+h3,
+p,
+input,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  list-style: none; }
+
+button {
+  outline: none;
+  border: none; }
+
+.header {
+  max-width: 1280px;
+  margin: 0 auto; }
+  .header__top {
+    background: #393939;
+    -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07); }
+
+@media screen and (max-width: 1200px) {
+  .header__top {
+    display: none; } }
+
+/*# sourceMappingURL=header.css.map */
