@@ -1,6 +1,10 @@
 module.exports = {
   "extends": "@mate-academy/eslint-config",
+  "parserOptions": {
+    "sourceType": "module",
+  },
   "env": {
-    "browser": true
+    "browser": true,
+    "jquery": true
   }
 };

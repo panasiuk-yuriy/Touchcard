@@ -1,7 +1,7 @@
 {
   "name": "gulp-boilerplate",
   "version": "1.0.0",
-  "description": "Frontend boilerplate based on gulp",
+  "description": "Touchcard header and footer",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
@@ -13,7 +13,7 @@
     "test": "npm run lint"
   },
   "keywords": [],
-  "author": "Mate Academy",
+  "author": "Yuriy Panasiuk",
   "license": "GPL-3.0",
   "devDependencies": {
     "@mate-academy/browsersync-config": "*",
@@ -72,5 +72,8 @@
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }

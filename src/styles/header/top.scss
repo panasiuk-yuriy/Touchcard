@@ -1,0 +1,45 @@
+@import "../utils";
+
+.top {
+  padding: 5px 78px;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 23px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    font-weight: 500;
+    color: $default-text-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &--select::after {
+      content: "";
+      background-image: url("../../images/vectors/arrow-down.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $desktop-size) {
+  .top {
+    display: none;
+  }
+}

@@ -1,0 +1,259 @@
+@import "../utils";
+
+.footer {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 78px;
+    background-color: $bg-web;
+  }
+
+  &__left {
+    @include flex-column;
+  }
+
+  &__contacts {
+    display: flex;
+    padding: 20px 0 55px;
+  }
+
+  &__phones {
+    margin-right: 52px;
+  }
+
+  &__phones,
+  &__address {
+    @include flex-column;
+    justify-content: space-between;
+  }
+
+  &__app:first-child {
+    margin-right: 16px;
+  }
+
+  &__media {
+    margin-top: 28px;
+  }
+
+  &__right--title {
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  &__payment {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copiright {
+    padding: 5px 78px;
+    display: flex;
+    justify-content: space-between;
+    background: $bg-top-color;
+  }
+
+  &__copiright_left,
+  &__copiright_right {
+    font-size: 12px;
+  }
+
+  &__copiright_right {
+    text-decoration: underline;
+  }
+
+  &__app_img,
+  &__media_img {
+    &:hover {
+      box-shadow: 10px 10px 41px -6px rgba(0,0,0,0.43);
+    }
+  }
+
+  &__media_link:first-child {
+    margin-right: 20px;
+  }
+
+  &__apps_mobile {
+    display: none;
+  }
+}
+
+.info {
+  &__title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #c7d7ff;
+  }
+
+  &__top {
+    @include flex-column;
+
+    & a:hover {
+      color: rgb(187, 187, 187);
+    }
+  }
+
+  &__contacts {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 8px;
+    transition: 0.3s;
+  }
+
+  &__apps {
+    justify-self: end;
+  }
+}
+
+.form {
+  max-width: 365px;
+  @include flex-column;
+
+  &__input {
+    border: none;
+    background-color: $bg-web;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    outline: none;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 15px;
+
+    & :focus {
+      border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+
+    &::placeholder {
+      color: #c7d7ff;
+      font-size: 15px;
+      font-weight: 300;
+    }
+  }
+
+  &__submit {
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: $bg-web;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+
+    & :hover {
+      background-color: #fff;
+      color: $bg-web;
+    }
+  }
+}
+
+@media screen and (max-width:$tablet-size) {
+  .form {
+    &__input {
+      background-color: $black-blue-color;
+    }
+  }
+}
+
+@media screen and (max-width:$tablet-size) {
+  .footer {
+    &__top {
+      padding: 20px 0;
+      flex-direction: column;
+      background-color: $dark-blue-color;
+    }
+
+    &__contacts {
+      padding: 0 17px 33px;
+    }
+
+    &__phones {
+      margin-bottom: 24px;
+    }
+
+    &__apps {
+      display: none;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__contactform {
+      background-color: $black-blue-color;
+      padding: 18px 16px 28px;
+    }
+
+    &__copiright {
+      padding: 0 0 10px;
+      background-color: $dark-blue-color;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__copiright_left {
+      order: 2;
+    }
+
+    &__copiright_right {
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+
+    &__apps_mobile {
+      display: block;
+      padding: 26px 17px 20px;
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.15);
+    }
+
+    &__app_img {
+      width: 160px;
+    }
+
+    &__payment {
+      padding: 0 17px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-size) {
+  .footer {
+    &__contacts {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width:$tablet-size) {
+  .info {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__contacts {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width:$tablet-size) {
+  .form {
+    &__submit {
+      background: #fff;
+      text-transform: uppercase;
+      color: $dark-blue-color;
+      font-weight: bold;
+      font-size: 17px;
+    }
+  }
+}

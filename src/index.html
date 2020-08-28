@@ -1,13 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.css">
-  </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top top">
+      <ul class="top__list">
+        <li class="top__item">
+          <a class="top__link" href="#">Правова інформація</a>
+        </li>
+        <li class="top__item">
+          <a class="top__link" href="#">Контакти</a>
+        </li>
+        <li class="top__item">
+          <a class="top__link top__link--select" href="#">
+            Укр
+            <img src="./images/vectors/arrow-down.svg" alt="arrow down" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__bottom bottom">
+      <a class="bottom__logo" href="#">
+        <img
+          class="bottom__img"
+          src="../images/Logo.svg"
+          alt="Touchcard" />
+      </a>
+      <button class="hamburger"><img src="./images/header/Menu.svg" alt="Menu" /></button>
+      <button class="cross">
+        <img src="./images/header/Cross.svg" alt="cross" />
+      </button>
+      <nav class="bottom__nav">
+        <ul class="bottom__list">
+          <li class="bottom__item">
+            <a class="bottom__link bottom__link--select" href="#">
+              Для бізнесу
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">QRpay</a></li>
+              <li><a href="#">Процесінг</a></li>
+              <li><a href="#">Вендінг NFC/QR</a></li>
+              <li><a href="#">Нейромаркетинг</a></li>
+            </ul>
+          </li>
+          <li class="bottom__item">
+            <a class="bottom__link bottom__link--select" href="#">Інструменти</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Прийом платежів на сайті</a></li>
+              <li><a href="#">Оплата за реквізитами</a></li>
+              <li><a href="#">Перекази с картки на картку</a></li>
+              <li><a href="#">Оплата по QR-коду</a></li>
+              <li><a href="#">Додаток iOS / Android</a></li>
+              <li><a href="#">Masterpass / Google Pay / Apple Pay</a></li>
+              <li><a href="#">Вітруальна карткау</a></li>
+              <li><a href="#">Безконтактна оплата NFC</a></li>
+            </ul>
+          </li>
+          <li class="bottom__item">
+            <a class="bottom__link bottom__link--select" href="#">Платежі та перекази</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">З картки на картку</a></li>
+              <li><a href="#">Мобільний зв’язок</a></li>
+              <li><a href="#">Перекази с картки на картку</a></li>
+              <li><a href="#">Інтернет</a></li>
+              <li><a href="#">Погашення кредитів</a></li>
+              <li><a href="#">Благодійність</a></li>
+              <li><a href="#">Дистрибуція</a></li>
+              <li><a href="#">Платежі по бюджету</a></li>
+              <li><a href="#">Продаж товарів</a></li>
+              <li><a href="#">Розваги</a></li>
+            </ul>
+          </li>
+          <li class="bottom__item">
+            <a class="bottom__link" href="#">Розробка</a>
+          </li>
+          <li class="bottom__item">
+            <a class="bottom__link" href="#">Блог</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="bottom__btn">В кабінет</button>
+    </div>
+    <div class="menu">
+      <div class="menu__top">
+        <button class="bottom__btn--mobile">В кабінет</button>
+        <div class="select_wrap">
+          <ul class="default_option">
+            <li>
+              <div class="option ua">
+                <img src="./images/header/select/ua.svg" alt="ua">
+              </div>
+            </li>
+          </ul>
+          <ul class="select_ul">
+            <li>
+              <div class="option ua">
+                <img src="./images/header/select/ua.svg" alt="ua">
+              </div>
+            </li>
+            <li>
+              <div class="option ru">
+                <img src="./images/header/select/ru.svg" alt="russian">
+              </div>
+            </li>
+            <li>
+              <div class="option eng">
+                <img src="./images/header/select/eng.svg" alt="english">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu__list">
+        <div class="panel">
+          <div class="panel__option">
+            <a href="#">Для бізнесу</a>
+          </div>
+          <div class="panel__collapse">
+            <div class="panel__body">
+              <ul class="submenu">
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/For business/1.svg"
+                      alt="QRpay" />
+                    <div>
+                      <p class="submenu__title">QRpay</p>
+                      <p class="submenu__subtitle">Додаток QR Pay</p>
+                    </div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/For business/2.svg"
+                      alt="QRpay" />
+                    <div>
+                      <p class="submenu__title">Процесінг</p>
+                      <p class="submenu__subtitle">Touchcard Tech</p>
+                    </div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/For business/3.svg"
+                      alt="QRpay" />
+                    <div>
+                      <p class="submenu__title">Вендінг NFC/QR</p>
+                      <p class="submenu__subtitle">Cityhub</p>
+                    </div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/For business/4.svg"
+                      alt="QRpay" />
+                    <div>
+                      <p class="submenu__title">Нейромаркетинг</p>
+                      <p class="submenu__subtitle"> Neurotrack</p>
+                    </div>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel__option">
+            <a href="#">Інструменти</a>
+          </div>
+          <div class="panel__collapse">
+            <div class="panel-body">
+              <ul class="submenu">
+                <a href="#">
+                  <li class="submenu__item">
+                    Прийом платежів на сайті
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Оплата за реквізитами
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Перекази с картки на картку
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Оплата по QR-коду
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Додаток iOS / Android
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Masterpass / Google Pay / Apple Pay
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Вітруальна картка
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Безконтактна оплата NFC
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Платіжний бот в Telegram та Viber
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Оплата за посиланням
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Платіжний додаток QR Pay
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Вітрина Touchcard
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    iFrame оплата
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Модулі оплати NFC / QR Pay для вендінгу
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    Оплата для сайту через Приват24
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel__option">
+            <a href="#">Платежі та перекази</a>
+          </div>
+          <div class="panel__collapse">
+            <div class="panel-body">
+              <ul class="submenu">
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/1.svg"
+                      alt="З картки на картку">
+                    <p class="submenu__title">З картки на картку</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/2.svg"
+                      alt="Мобільний зв’язок">
+                    <p class="submenu__title">Мобільний зв’язок</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/3.svg"
+                      alt="Інтернет">
+                    <p class="submenu__title">Інтернет</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/4.svg"
+                      alt="Погашення кредитів">
+                    <p class="submenu__title">Погашення кредитів</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/5.svg"
+                      alt="Благодійність">
+                    <p class="submenu__title">Благодійність</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/6.svg"
+                      alt="Дистрибуція">
+                    <p class="submenu__title">Дистрибуція</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/7.svg"
+                      alt="Платежі по бюджету">
+                    <p class="submenu__title">Платежі по бюджету</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/8.svg"
+                      alt="Продаж товарів">
+                    <p class="submenu__title">Продаж товарів</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/9.svg"
+                      alt="Розваги">
+                    <p class="submenu__title">Розваги</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/10.svg"
+                      alt="Таксі">
+                    <p class="submenu__title">Таксі</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/11.svg"
+                      alt="Фінансові послуги">
+                    <p class="submenu__title">Фінансові послуги</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/12.svg"
+                      alt="Штрафи">
+                    <p class="submenu__title">Штрафи</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/13.svg"
+                      alt="Комунальні платежі">
+                    <p class="submenu__title">Комунальні платежі</p>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="submenu__item">
+                    <img
+                      class="submenu__img"
+                      src="./images/header/Payments/14.svg"
+                      alt="Інше">
+                    <p class="submenu__title">Інше</p>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="#">
+          <li class="menu__item">Розробка</li>
+        </a>
+        <a class="menu__link" href="#">
+          <li class="menu__item">Блог</li>
+        </a>
+        <a class="menu__link" href="#">
+          <li class="menu__item">Контакти</li>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__left">
+        <a class="footer__logo" href="#">
+          <img
+            class="bottom__img"
+            src="./images/footer/Touchcard logo Site on light@1.5x.svg"
+            alt="Touchcard" />
+        </a>
+        <div class="footer__contacts">
+          <div class="footer__phones info">
+            <div class="info__top">
+              <h4 class="info__title">Контакти</h4>
+              <a class="info__contacts" href="tel: +38 (063) 500-11-33">+38 (063) 500-11-33</a>
+              <a class="info__contacts" href="tel: +38 (098) 500-11-33">+38 (098) 500-11-33</a>
+              <a class="info__contacts" href="tel: +38 (099) 500-11-33">+38 (099) 500-11-33</a>
+            </div>
+          </div>
+          <div class="footer__address info">
+            <div class="info__top">
+              <h4 class="info__title">Адреси</h4>
+              <p class="info__contacts">вул. Володимирська,<br> 101, Київ, 02000</p>
+              <a class="info__contacts" href="mailto: info@touchcard.com">info@touchcard.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__apps">
+          <a class="footer__app" href="#">
+            <img
+              class="footer__app_img"
+              src="./images/footer/apple-store.png"
+               alt="app store" />
+          </a>
+          <a class="footer__app" href="#">
+            <img
+              class="footer__app_img"
+              src="./images/footer/google-play.png"
+              alt="google play" />
+          </a>
+          <div class="footer__media">
+            <a class="footer__media_link" href="#">
+              <img
+                class="footer__media_img"
+                src="./images/footer/facebook-icon.svg"
+                alt="facebook" />
+            </a>
+            <a class="footer__media_link" href="#">
+              <img
+                class="footer__media_img"
+                src="./images/footer/youtube-icon.svg"
+                alt="youtube" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__contactform">
+          <h2 class="footer__right--title">Звяжіться з нами</h2>
+          <form class="form" action="">
+            <input
+              class="form__input"
+              placeholder="Як до Вас звертатись?"
+              type="text">
+            <input
+              class="form__input"
+              placeholder="Введіть номер телефону"
+              type="text">
+            <input
+              class="form__input" placeholder="Яке питання Вас цікавить?"
+              type="text">
+            <input
+              class="form__submit"
+              type="submit"
+              value="Відправити заявку">
+          </form>
+        </div>
+        <div class="footer__apps_mobile">
+          <a class="footer__app" href="#">
+            <img
+              class="footer__app_img"
+              src="./images/footer/apple-store.png"
+              alt="app store" />
+          </a>
+          <a class="footer__app" href="#">
+            <img
+              class="footer__app_img"
+              src="./images/footer/google-play.png"
+              alt="google play" />
+          </a>
+          <div class="footer__media">
+            <a class="footer__media_link" href="#">
+              <img
+                class="footer__media_img"
+                src="./images/footer/facebook-mob.svg"
+                alt="facebook" />
+            </a>
+            <a class="footer__media_link" href="#">
+              <img
+                class="footer__media_img"
+                src="./images/footer/youtube-mob.svg"
+                alt="youtube" />
+            </a>
+          </div>
+        </div>
+        <div class="footer__payment">
+          <img src="./images/footer/pci.svg" alt="pci">
+          <img src="./images/footer/visa.svg" alt="visa">
+          <img src="./images/footer/mc.svg" alt="mastercard">
+        </div>
+      </div>
+    </div>
+    <div class="footer__copiright">
+      <p class="footer__copiright_left">2020 © City World Group LLC. Touchcard™</p>
+      <a class="footer__copiright_right" href="#">Правова інформація</a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="scripts/main.js"></script>
+  <script type="text/javascript" src="scripts/dropdown.js"></script>
+  <script type="text/javascript" src="scripts/hamburger.js"></script>
+  <script type="text/javascript" src="scripts/select.js"></script>
+</body>
+
 </html>

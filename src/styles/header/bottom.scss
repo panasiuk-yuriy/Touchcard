@@ -1,0 +1,85 @@
+@import "../utils";
+
+.bottom {
+  @include flex-center;
+  justify-content: space-between;
+  padding: 15px 78px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+
+  &__list {
+    @include flex-center;
+  }
+
+  &__item {
+    margin-right: 45px;
+    text-transform: uppercase;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:first-child::before {
+      content: url("../../images/vectors/for-bussiness.svg");
+      position: relative;
+      top: 2px;
+      right: 5px;
+    }
+  }
+
+  &__link {
+    color: $dark-blue-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__link--select::after {
+    content: url("../../images/vectors/arrow-down-black.svg");
+    position: relative;
+    left: 5px;
+    top: -2px;
+  }
+
+  &__btn,
+  &__btn--mobile {
+    width: 175px;
+    height: 40px;
+    background: $bg-web;
+    border-radius: 8px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &::after {
+      content: url("../../images/vectors/to-account.svg");
+      position: relative;
+      left: 5px;
+      top: 3px;
+    }
+
+    &:hover {
+      background-color: #274eaf;
+    }
+  }
+}
+
+@media screen and (max-width: $desktop-size) {
+  .bottom {
+    padding: 15px 16px;
+    &__nav,
+    &__btn {
+      display: none;
+    }
+
+    &__btn--mobile {
+      height: 50px;
+      width: 225px;
+      margin-right: 10px;
+    }
+  }
+}

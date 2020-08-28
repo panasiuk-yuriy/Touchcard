@@ -1,4 +1,4 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+-[DEMO LINK](https://panasiuk-yuriy.github.io/Touchcard/)
+Header and Footer design[figma](https://www.figma.com/file/bFmqLJ97Ulb6kM9D3gBVve/Test-1.0?node-id=17%3A542)
+
+--Used technologies: jQuery, SASS

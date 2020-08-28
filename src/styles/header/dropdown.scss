@@ -1,0 +1,19 @@
+@import "../utils";
+
+.dropdown-menu {
+  margin-top: 5px;
+  padding: 10px 0;
+  position: absolute;
+  display: none;
+  background-color: $bg-web;
+
+  & li {
+    margin-top: 5px;
+    padding: 5px 10px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $dark-blue-color;
+    }
+  }
+}

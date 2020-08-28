@@ -1,0 +1,16 @@
+@import "../utils";
+
+.hamburger,
+.cross {
+  background: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 100;
+}
+
+@media screen and (min-width: $desktop-size) {
+  .hamburger,
+  .cross {
+    display: none;
+  }
+}

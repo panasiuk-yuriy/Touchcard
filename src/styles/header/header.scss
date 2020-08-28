@@ -1,0 +1,19 @@
+@import "../utils";
+
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  &__top {
+    background: $bg-top-color;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  }
+}
+
+@media screen and (max-width: $desktop-size) {
+  .header {
+    &__top {
+      display: none;
+    }
+  }
+}
