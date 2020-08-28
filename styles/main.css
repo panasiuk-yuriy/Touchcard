@@ -408,7 +408,7 @@ button {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer; }
-    .form__submit :hover {
+    .form__submit:hover {
       background-color: #fff;
       color: #2a66f9; }
 
