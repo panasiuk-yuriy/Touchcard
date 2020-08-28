@@ -150,7 +150,7 @@
     transition: 0.3s;
     cursor: pointer;
 
-    & :hover {
+    &:hover {
       background-color: #fff;
       color: $bg-web;
     }
