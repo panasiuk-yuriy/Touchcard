@@ -142,7 +142,7 @@ button {
     margin-bottom: 20px;
     color: #fff;
     font-size: 15px; }
-    .form__input :focus {
+    .form__input:focus {
       border-bottom: 1px solid white; }
     .form__input::-webkit-input-placeholder {
       color: #c7d7ff;
