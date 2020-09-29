@@ -1,19 +1,75 @@
 @import "../utils";
 
-.dropdown-menu {
-  margin-top: 5px;
-  padding: 10px 0;
+.dropdown {
+  width: max-content;
   position: absolute;
+  top: 32px;
+  left: -20px;
+  padding: 6px;
   display: none;
-  background-color: $bg-web;
+  z-index: 10;
+  background-color: #fff;
+  border: 0.5px solid #c7d7ff;
+  box-shadow: 0 17px 29px rgba(99, 135, 169, 0.19);
+  border-radius: 8px;
 
-  & li {
-    margin-top: 5px;
+  & a {
+    margin-bottom: 2px;
     padding: 5px 10px;
+    display: flex;
+    align-items: center;
     transition: 0.3s;
 
     &:hover {
-      background-color: $dark-blue-color;
+      background: #eef0f4;
+      border-radius: 6px;
+
+      .dropdown__img path {
+        fill: #2B2F4A;
+      }
+      .dropdown__img circle {
+        stroke: #2B2F4A;
+      }
     }
   }
+
+  &__link svg,
+  &__link img {
+    margin-right: 16px;
+  }
+
+  &__img--big {
+    width: 38px;
+  }
+
+  &__img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__img path {
+    transition: 0.3s;
+  }
+
+
+  &__text p,
+  &__link,
+  &__link p {
+    font-size: 15px;
+    color: $dark-blue-color;
+    text-transform: initial;
+  }
+
+  &__text p:last-child {
+    color: grey;
+  }
+}
+
+.payments,
+.instruments {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-auto-flow: column;
+  z-index: 10;
 }

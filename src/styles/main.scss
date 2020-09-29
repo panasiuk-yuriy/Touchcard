@@ -1,6 +1,5 @@
 @import "utils";
 @import "header/header.scss";
-@import "header/top.scss";
 @import "header/bottom.scss";
 @import "header/dropdown.scss";
 @import "footer/footer.scss";
@@ -8,7 +7,75 @@
 @import "mobile/panel.scss";
 @import "mobile/hamburger.scss";
 @import "mobile/select.scss";
+@import "body/catalog.scss";
+@import "body/card-pay.scss";
 
 .main {
-  height: 500px;
+  width: 100%;
+  padding-top: 142px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1165px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.title__block {
+  width: 100%;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media (max-width: 620px) {
+  .title__block {
+    margin-bottom: 30px;
+  }
+}
+
+.title__block h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #2B2F4A;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 620px) {
+  .title__block h2 {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+}
+
+.title__block p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+@media (max-width: 620px) {
+  .title__block p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title__block p {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

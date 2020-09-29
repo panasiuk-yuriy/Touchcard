@@ -1,12 +1,48 @@
 @import "../utils";
 
 .header {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.07);
 
   &__top {
-    background: $bg-top-color;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    background: #393939;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.07);
+    z-index: 10;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__top__wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    padding: 6px 0;
+  }
+
+  &__top__wrap a:nth-child(2) {
+    margin: 0 22px;
+  }
+
+  &__top__link {
+    font-size: 12px;
+    font-weight: 500;
+    color: $default-text-color;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  &__list {
+    @include flex-center;
   }
 }
 

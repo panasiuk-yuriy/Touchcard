@@ -1,0 +1,490 @@
+.card__pay {
+  width: 100%;
+}
+
+.card__pay .card__pay__wrap {
+  width: 100%;
+  padding: 44px 0;
+}
+
+.card__pay .card__pay__items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .card__pay .card__pay__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .card__pay .card__pay__items .card__arrow {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0;
+  }
+}
+
+.card__pay .card__pay__items .card__pay__item {
+  width: calc(50% - 60px);
+  border-radius: 16px;
+}
+
+@media (max-width: 1160px) {
+  .card__pay .card__pay__items .card__pay__item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .card__pay .card__pay__items .card__pay__item {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.card__pay .card__pay__items .card__pay__item.card__pay__item1 {
+  position: relative;
+  background: #16B974;
+}
+
+.card__pay .card__pay__items .card__pay__item.card__pay__item1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 40px;
+  background: #16B974;
+  opacity: 0.5;
+  filter: blur(40px);
+  border-radius: 16px;
+}
+
+.card__pay .card__pay__items .card__pay__item.card__pay__item2 {
+  position: relative;
+  background: linear-gradient(309.98deg, #8594A8 -15.36%, #A2BBDC 104.25%);
+}
+
+.card__pay .card__pay__items .card__pay__item.card__pay__item2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 40px;
+  background: #7EA4FF;
+  opacity: 0.5;
+  filter: blur(40px);
+  border-radius: 16px;
+}
+
+.card__pay .card__pay__items .card__pay__item .card__pay__item__top {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+  @media (max-width: 550px) {
+    & {
+      padding: 16px;
+    }
+  }
+}
+
+.card__pay .card__pay__items .card__pay__item .card__pay__item__top .title {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  display: block;
+  margin-bottom: 6px;
+
+  @media (max-width: 550px) {
+    & {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card__pay .card__pay__items .card__pay__item .card__pay__item__top p {
+  font-size: 14px;
+  line-height: 17px;
+  @media (max-width: 550px) {
+    & {
+      display: none;
+    }
+  }
+}
+
+.card__pay .card__pay__items .card__pay__item .card__pay__item__body {
+  position: relative;
+  width: 100%;
+  padding: 15px 20px 26px;
+
+  @media (max-width: 550px) {
+    & {
+      padding: 8px 16px 16px;
+    }
+  }
+}
+
+.card__pay .card__pay__items .card__pay__item .card__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+
+  @media (max-width: 550px) {
+    & {
+      justify-content: space-between;
+    }
+  }
+}
+
+
+.card__pay .card__pay__items .card__pay__item .inp__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item label {
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+  margin-bottom: 8px;
+
+  @media (max-width: 550px) {
+    & {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item label .info__cvv {
+  position: relative;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item label .info__cvv .cvv__hidden {
+  position: absolute;
+  bottom: calc(100% + 13px);
+  right: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  display: none;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  width: 169px;
+  padding: 8px 11px;
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item label .info__cvv .cvv__hidden::before {
+  content: "";
+  width: 15px;
+  height: 8px;
+  background: url(../img/before.svg) no-repeat center;
+  top: 99%;
+  position: absolute;
+  right: 18px;
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item label .info__cvv .cvv__hidden img {
+  margin-right: 12px;
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item label .info__cvv:hover .cvv__hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item input {
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  background: none;
+  height: 48px;
+  padding: 7px 10px;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  color: #fff;
+  outline: none;
+  max-width: 100%;
+}
+
+.card__pay .card__pay__items .card__pay__item1 .inp__item input.error {
+  border: 1px solid #0E6A43;
+}
+.card__pay .card__pay__items .card__pay__item2 .inp__item input.error {
+  border: 1px solid #3B4654;
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item.inp__item__card {
+  width: calc(100% - 180px);
+  min-width: 252px;
+  max-width: 252px;
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item.inp__item__card input {
+  width: 100%;
+}
+
+@media (max-width: 550px) {
+  .card__pay .card__pay__items .card__pay__item .inp__item.inp__item__card {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .card__pay .card__pay__items .card__pay__item .inp__item.inp__item__card input {
+    text-align: center;
+  }
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item.inp__item__termin {
+  width: 20%;
+  max-width: 82px;
+}
+
+@media (max-width: 550px) {
+  .card__pay .card__pay__items .card__pay__item .inp__item.inp__item__termin {
+    min-width: 82px;
+    width: calc(50% - 10px);
+    max-width: 33%;
+    margin-right: 0;
+  }
+  .card__pay .card__pay__items .card__pay__item .inp__item.inp__item__termin input {
+    text-align: center;
+  }
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item.inp__item__cvv {
+  width: 20%;
+  margin-right: 0;
+  max-width: 81px;
+}
+
+@media (max-width: 550px) {
+  .card__pay .card__pay__items .card__pay__item .inp__item.inp__item__cvv {
+    min-width: 60px;
+    width: calc(50% - 10px);
+    max-width: 20%;
+  }
+  .card__pay .card__pay__items .card__pay__item .inp__item.inp__item__cvv input {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .card__pay .card__pay__items .card__pay__item .inp__item.inp__item__tel {
+    display: none;
+  }
+
+  .card__pay .card__pay__items .card__pay__item .inp__item.inp__item__tel input {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.card__pay .card__pay__items .card__pay__item .inp__item.inp__item__sum {
+  max-width: 119px;
+  margin-right: 0;
+}
+
+@media (max-width: 550px) {
+  .card__pay .card__pay__items .card__pay__item .inp__item.inp__item__sum {
+    min-width: 82px;
+    width: calc(50% - 10px);
+    max-width: 33%;
+  }
+  .card__pay .card__pay__items .card__pay__item .inp__item.inp__item__sum input {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.card__pay .card__pay__items .card__pay__item .summa__razom {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card__pay .card__pay__items .card__pay__item .summa__razom .title {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.card__pay .card__pay__items .card__pay__item .summa__razom .summa {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 32px;
+}
+
+.card__pay .card__pay__items .card__pay__item .pay__end > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 9px;
+}
+
+.card__pay .card__pay__items .card__pay__item .pay__end > span img {
+  margin-right: 5px;
+}
+
+.card__pay .card__pay__items .card__pay__item .pay__end button {
+  width: 100%;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  background: #2A66F9;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+
+.card__pay .card__pay__items .card__pay__item .pay__end button:not(:disabled):hover {
+  border: 1px solid #C7D7FF;
+}
+
+.card__pay .card__pay__items .card__pay__item .pay__end button img {
+  margin-left: 10px;
+}
+
+.card__pay .card__pay__items .card__pay__item .pay__end button:disabled {
+  background: rgba(218, 218, 218, 0.2);
+  color: rgba(255, 255, 255, 0.24);
+  cursor: no-drop;
+}
+
+.card__pay .card__pay__items .card__pay__item .pay__end button:disabled img {
+  display: none;
+}
