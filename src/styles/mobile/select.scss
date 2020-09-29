@@ -62,5 +62,82 @@
 
 .select_wrap.active .default_option:before {
   top: 25px;
-  transform: rotate(-225deg);
+  transform: rotate(135deg);
+}
+
+
+@media screen and (min-width: $desktop-size) {
+  .select_wrap {
+    width: 44px;
+  }
+
+  .select_wrap .default_option {
+    background: transparent;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .select_wrap .default_option li {
+    padding: 0;
+  }
+
+  .select_wrap .default_option:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 4px;
+    height: 4px;
+    border: 1.5px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    transition: 0.3s;
+  }
+
+  .select_wrap .select_ul {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    display: none;
+  }
+
+  .select_wrap .select_ul li {
+    padding: 7px 10px;
+    cursor: pointer;
+  }
+
+  .select_wrap .select_ul li:hover {
+    background: #EEF0F4;
+    border-radius: 6px;
+  }
+
+  .select_wrap .option {
+    @include flex-center;
+  }
+
+  .select_wrap.active .select_ul {
+    @include flex-center;
+    flex-direction: column;
+    padding: 10px 0;
+    z-index: 100;
+  }
+
+  .select_wrap.active .default_option:before {
+    top: 6px;
+    transition: .3s;
+  }
+
+  .select_ul a {
+    font-size: 12px;
+    font-weight: 500;
+    color: $bg-top-color;
+  }
+
+  .default_option p {
+    font-size: 12px;
+  }
 }

@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
-    "lint": "stylelint src/**/*.scss && eslint src/**/*.js && htmllint --rc ./node_modules/@mate-academy/htmllint-config/.htmllintrc src/*.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "publish": "npm run deploy",
@@ -60,6 +59,7 @@
     "ignore": [
       "**/dist/**",
       "**/lib/**",
+      "**/src/**",
       "**/backstop_data/**",
       "**/report/**"
     ]
@@ -74,6 +74,7 @@
     "last 2 versions"
   ],
   "dependencies": {
+    "inputmask": "^5.0.5",
     "jquery": "^3.5.1"
   }
 }
