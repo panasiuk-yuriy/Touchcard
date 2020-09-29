@@ -19,6 +19,7 @@ button {
   border: none; }
 
 .bottom {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,9 +29,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 78px;
-  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07); }
+  padding: 15px 0; }
   .bottom__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -39,44 +38,68 @@ button {
         -ms-flex-align: center;
             align-items: center; }
   .bottom__item {
+    position: relative;
     margin-right: 45px;
     text-transform: uppercase; }
     .bottom__item:last-child {
       margin-right: 0; }
-    .bottom__item:first-child::before {
-      content: url("../images/vectors/for-bussiness.svg");
-      position: relative;
-      top: 2px;
-      right: 5px; }
   .bottom__link {
     color: #2b2f4a;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 15px 0; }
-    .bottom__link:hover {
-      text-decoration: underline; }
-  .bottom__link--select::after {
-    content: url("../images/vectors/arrow-down-black.svg");
-    position: relative;
-    left: 5px;
-    top: -2px; }
+    padding: 15px 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .bottom__link--selected .bottom__link {
+    color: #2a66f9; }
+  .bottom__link--selected svg path {
+    fill: #8594A8;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .bottom__link--selected svg rect {
+    fill: #2a66f9;
+    stroke: #2a66f9;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .bottom__link--arrow {
+    position: absolute;
+    top: 6px;
+    right: -12px;
+    -webkit-transition: 1s;
+    transition: 1s; }
+  .bottom__link--cube {
+    position: absolute;
+    top: 2px;
+    left: -20px; }
   .bottom__btn, .bottom__btn--mobile {
     width: 175px;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: #2a66f9;
+    border: 1px solid transparent;
     border-radius: 8px;
     color: #fff;
-    position: relative;
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-    .bottom__btn::after, .bottom__btn--mobile::after {
-      content: url("../images/vectors/to-account.svg");
-      position: relative;
-      left: 5px;
-      top: 3px; }
+    .bottom__btn span, .bottom__btn--mobile span {
+      margin-right: 5px; }
     .bottom__btn:hover, .bottom__btn--mobile:hover {
-      background-color: #274eaf; }
+      background-color: #fff;
+      color: #2a66f9;
+      border: 1px solid #2a66f9; }
+      .bottom__btn:hover svg path, .bottom__btn--mobile:hover svg path {
+        stroke: #2a66f9;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
 
 @media screen and (max-width: 1200px) {
   .bottom {

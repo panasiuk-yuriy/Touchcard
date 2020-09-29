@@ -88,7 +88,75 @@ button {
 
 .select_wrap.active .default_option:before {
   top: 25px;
-  -webkit-transform: rotate(-225deg);
-          transform: rotate(-225deg); }
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg); }
+
+@media screen and (min-width: 1200px) {
+  .select_wrap {
+    width: 44px; }
+  .select_wrap .default_option {
+    background: transparent;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer; }
+  .select_wrap .default_option li {
+    padding: 0; }
+  .select_wrap .default_option:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 4px;
+    height: 4px;
+    border: 1.5px solid;
+    border-color: transparent transparent #fff #fff;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .select_wrap .select_ul {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    display: none; }
+  .select_wrap .select_ul li {
+    padding: 7px 10px;
+    cursor: pointer; }
+  .select_wrap .select_ul li:hover {
+    background: #EEF0F4;
+    border-radius: 6px; }
+  .select_wrap .option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .select_wrap.active .select_ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 0;
+    z-index: 100; }
+  .select_wrap.active .default_option:before {
+    top: 6px;
+    -webkit-transition: .3s;
+    transition: .3s; }
+  .select_ul a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #393939; }
+  .default_option p {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=select.css.map */
